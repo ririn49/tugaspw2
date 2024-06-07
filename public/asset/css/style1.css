@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css?family=Domine:wght@600;700;800&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+:root{
+    --brand:#b33030;
+    --body:#606060;
+    --dark:#19282f;
+    --border-radius:4px;
+    --shadow:0px 4px 60px rgba(0,0,0,0.14);
+}
+
+
+
+/* reset & helpers */
+body{
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 1.7;
+    color: var(--body);
+}
+
+.navbar-brand {
+    font-size: 32px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0,7);
+}
+
+.logo-title h1{
+    font-weight: 14px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    color: var(--dark);
+    font-family: "Domine", sans-serif;
+}
+
+a{
+    color: var(--dark);
+    text-decoration: none;
+    transition: all 0.4s linear;
+}
+
+a:hover{
+    color: var(--brand);
+}
+
+a.custom-link{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;   
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-intro{
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.section-inro p{
+    max-width: 500px;
+    margin:auto;
+}
+
+.custom-card{
+    transition: all 0.4s ease;
+    background-color: white;
+    border-radius: var(--border-radius);
+}
+
+.costum-card:hover{
+    box-shadow:var(--shadow);
+    transform: translateY(-5px);  
+}
+
+/* Hero */
+#hero{
+    min-height:100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/donasi.jpeg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+#hero h1{
+    font-weight: 700;
+    color: white;
+}
+
+#hero p {
+    color: white ;
+}
+
+#hero p {
+    max-width: 500px;
+    margin: 12px auto 28px auto;
+}
+
+#hero .input-grup{
+    padding:6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius);
+    transition: all 0.4s ease;
+}
+
+#hero .input-group input{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+
+#hero .input-group input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#hero .input-group input:focus{
+    box-shadow: none;
+}
+
+/* BTN */
+.btn{
+    padding: 12px 28px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: var(--border-radius);
+    transition: all 0.4s ease;
+}
+.btn:hover{
+    transform: translateY(-3px);
+}
+
+.btn-brand{
+    background-color: var(--brand);
+    color: white;
+}
+
+.ntn-brand:hover{
+    color:white;
+}
+
+
+/*  navbar */
+.navbar.bg-white{
+    font-size: 32px;
+    color: black !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0,7);
+    border-bottom:1px solid (0, 0, 0, 0.5);
+} 
+
+.navbar .navbar-nav .nav-link{
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active{
+    color: var(--brand);
+}
+
+
+/* Services */
+.service{
+    padding: 44px 24px;
+    text-align: center; 
+}
+
+
+.icon-box{
+    width: 80px;
+    height:80px;
+    background-color: var(--brand);
+    color: white;
+    border-radius: var(--border-radius);
+    font-size: 34px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+}
+
+.service h5{
+    margin-top:28px;
+    margin-bottom: 12px;
+}
+
+.sercice p{
+    font-size: 14px;
+}
+
+
+/*  cta */
+#cta {   
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/donasi.jpeg);
+   
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#cta h2{
+    color: white;
+}
+#cta p{
+ color: white;
+}
+
+/* portfolio */
+
+.project-wrapper{
+    height: 100%;
+    position: relative;
+    overflow:hidden;
+}
+
+.project-wrapper img{
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.8s ease;
+}
+
+.project-wrapper .btn{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.project-wrapper:hover .btn-brand{
+    top: 50%;
+    opacity: 1;
+}
+
+.project-wrapper:hover img{
+    transform: scale(1.2);
+    filter: blur(2px);
+}
+
+/* reviews */
+
+/* team */
+.team-member{
+    text-align: center;
+}
+
+.team-member h5{
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+
+
+.team-member .team-member-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member img{
+    transition: all 0.5s ease;
+}
+
+.social-links{
+    display: flex;
+}
+
+.social-links a{
+ width: 32px;
+ height: 32px;
+ background-color: white;
+ color: var(--brand);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-left: 4px;
+ margin: 4px;
+}
+
+.social-links a:hover{
+    background-color: var(--brand);
+    color: white;
+}
+
+.team-member .social-links{
+    position: absolute;
+    bottom: 40px;
+    opacity: 0;
+    left:50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+.team-member:hover .social-links{
+    bottom: 20px;
+    opacity: 1;
+}
+
+.team-member:hover img{
+    transform: scale(1.1);
+}
+
+
+/* */
+
+
+
+/*  blog */
+
+
+/* contact */
+#contact input.form-control{
+    height: 49px;  
+}
+
+#contact .form-control{
+    background-color: white;
+    border-color: white;
+}
+
+#contact .form-control:focus{
+    box-shadow: none;
+    border-color: var(--brand);
+}
+#contact .map{
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+}
+/* WA Button Start*/ 
+#whatsapp .wa{
+    position: fixed;
+    transform: all .5s ease;
+    background-color: #25d366;
+    display: black;
+    text-align:center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border-radius:none;
+    
+  }
+/* WA Button End*/ 
+
+/* footer */
+footer p{
+    color: whitesmoke;
+}
+
+footer ul li a{
+    color: whitesmoke;
+}
+
+footer h6{
+    margin-bottom : 16px;
+    color: white;
+}
+
+footer ul{
+    list-style: none;
+    padding:0 ;
+    color: white;
+}
+
+.footer-top{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/donasi.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-top .logo-footer{
+ margin-bottom: 16px;
+}
+
+.footer-bottom{
+    background-color: var(--brand);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: white;
+}
+
+
+
+
+
+
+
+/* */
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  /* button on top */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+  
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+  
+  
